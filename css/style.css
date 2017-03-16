@@ -19,11 +19,16 @@ h2 {
     font-family: 'Arimo';
 }
 
+h3 {
+    font-family: 'Arimo';
+}
+
 li {
     cursor: pointer;
 }
 
 p {
+    color: gray;
     font-family: 'Arimo';
     margin: 0 0 10px 0;
 }
@@ -145,11 +150,10 @@ a {
     position: absolute;
     background-color: #3399ff;
     width: 160px;
-    left: 370px;
-    top: 48px;
+    top: 36px;
     text-align: center;
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 0 -30px;
     padding: 7px;
     z-index: 1;
 }
@@ -165,7 +169,7 @@ a {
         opacity: 0;
     }
     to {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
 }
@@ -176,7 +180,7 @@ a {
         opacity: 0;
     }
     to {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
 }
@@ -187,7 +191,7 @@ a {
         opacity: 0;
     }
     to {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
 }
@@ -198,14 +202,14 @@ a {
         opacity: 0;
     }
     to {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
 }
 
 @-webkit-keyframes select_back {
     from {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
     to {
@@ -216,7 +220,7 @@ a {
 
 @-o-keyframes select_back {
     from {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
     to {
@@ -227,7 +231,7 @@ a {
 
 @-moz-keyframes select_back {
     from {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
     to {
@@ -238,7 +242,7 @@ a {
 
 @keyframes select_back {
     from {
-        top: 48px;
+        top: 36px;
         opacity: 1;
     }
     to {
@@ -1033,16 +1037,25 @@ a:active {
     margin: 50px 0 0 50px;
 }
 
+.search_right_con {
+    border-width: 0px;
+    overflow: hidden;
+}
+
 .right_con_text {
+    border-width: 0px;
     position: relative;
 }
 
 .right_con_text input {
+    border-width: 0px;
+    padding: 0 40px 0 40px;
     border-radius: 35px;
     height: 55px;
-    width: 700px;
+    width: 620px;
     border: none;
     overflow: hidden;
+    font-size: 20px;
 }
 
 .right_con_btn {
@@ -1119,7 +1132,6 @@ a:active {
 .reason_simple {
     float: left;
     width: 298px;
-    height: 232px;
     padding: 60px 31px 0;
     text-align: center;
 }
@@ -1269,16 +1281,19 @@ a:active {
     transform: scale(1.1, 1.1);
 }
 
-.bottom_con_img {
+.bg_image {
     position: relative;
     background-image: url(../images/plan_bg.png);
     background-repeat: no-repeat;
     width: 115px;
     height: 82px;
+}
+
+.bottom_con_img {
     margin: 85px 0 44px 122.5px;
 }
 
-.bottom_con_img img {
+.bg_image img {
     height: 39px;
     width: 39px;
     padding: 26px 40px;
@@ -1312,12 +1327,13 @@ a:active {
 }
 
 .bottom_con_btn_full {
-    position: absolute;
+    position: relative;
     width: 0;
     height: 50px;
     border-radius: 30px;
     background-color: #1a50ff;
     margin: -34px 0 0 0px;
+    transition: width, 0.5s
 }
 
 .bottom_con_btn a {
@@ -1332,7 +1348,7 @@ a:active {
 
 /*                                     contain customer start                                        */
 
-.contain_customer {
+.cus_con {
     position: relative;
     height: 416px;
     padding: 100px 0;
@@ -1387,7 +1403,7 @@ a:active {
     overflow: hidden;
 }
 
-#cus_coms {
+.cus_coms {
     position: absolute;
     width: 4500px;
     height: 249px;
@@ -1437,7 +1453,6 @@ a:active {
 .intr_font h3 {
     margin: 20px 0 10px 0;
     font-size: 18px;
-    font-family: 'Arimo';
 }
 
 .intr_font p {
@@ -1447,8 +1462,303 @@ a:active {
     color: gray;
 }
 
+.cus_end {
+    position: relative;
+    background-image: url("../images/awesome_service_bg.png");
+    padding: 100px 0 0 0;
+    height: 95px;
+    width: 100%;
+}
+
+.cus_end_title {
+    padding: 0 15px;
+    width: 750px;
+    height: 39px;
+    float: left;
+}
+
+.cus_end_title h2 {
+    position: relative;
+    font-size: 36px;
+    color: white;
+    margin: 0 0 0 50px;
+}
+
+.cus_end_btn {
+    height: 46px;
+    width: 136px;
+    padding: 0 15px;
+    margin: 0 0 0 97px;
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid white;
+    float: left;
+    cursor: pointer;
+}
+
+.cus_end_btn>p {
+    font-size: 14px;
+    margin: 15px 0 0 0;
+    color: black;
+}
+
+.cus_end_btn:hover {
+    background-color: #1a60ff
+}
+
+.cus_end_btn:hover #cus_end {
+    color: white;
+}
+
 
 /*                                     contain customer end                                        */
+
+
+/*                                     About webhost start                                        */
+
+.about_webhost {
+    background-image: url("../images/all_page_bg.jpg");
+    height: 252px;
+}
+
+.webhost_title {
+    position: relative;
+    width: 1152px;
+    text-align: center;
+}
+
+.webhost_title>h1 {
+    margin: 0;
+    font-family: 'Arimo';
+    font-size: 37px;
+    color: white;
+    padding: 67px 0 22px 0;
+}
+
+.about_btn {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border-radius: 26px;
+    background-color: #1a80ff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.about_btn:hover .about_btn_full {
+    -webkit-transition: width, left 0.4s, 0.4s;
+    -moz-transition: width, left 0.4s, 0.4s;
+    -ms-transition: width, left 0.4s, 0.4s;
+    -o-transition: width, left 0.4s, 0.4s;
+    transition: width, left 0.4s, 0.4s;
+    left: 0px;
+    width: 100%;
+}
+
+.about_btn>p {
+    position: relative;
+    margin: 16px 0 0 0;
+    color: white;
+    z-index: 1;
+}
+
+.about_btn_full {
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    height: 100%;
+    margin: -34px 0 0 0;
+    left: 50%;
+    -webkit-transition: left, width 0.4s, 0.4s;
+    -moz-transition: left, width 0.4s, 0.4s;
+    -ms-transition: left, width 0.4s, 0.4s;
+    -o-transition: left, width 0.4s, 0.4s;
+    transition: left, width 0.4s, 0.4s;
+    background-color: #1a50ff;
+}
+
+
+/*                                     About webhost end                                        */
+
+
+/*                                     About welcome start                                        */
+
+.about_welcome {
+    height: 347px;
+    padding: 100px 0;
+}
+
+.wel_img {
+    position: relative;
+    height: 347px;
+    width: 555px;
+    padding: 0 15px;
+    float: left;
+}
+
+.wel_img>img {
+    height: 344.6px;
+    width: 553px;
+    border: 1px solid #1a50ff;
+}
+
+.wel_font {
+    position: relative;
+    width: 555px;
+    height: 295px;
+    float: left;
+}
+
+.wel_font>h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.wel_font>p {
+    color: gray;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+}
+
+
+/*                                     About welcome end                                        */
+
+
+/*                                     about customer start                                        */
+
+.about_customer {
+    height: 447px;
+    padding: 0 0 100px 0;
+}
+
+.ab_cus_main {
+    height: 360px;
+    width: 3000px;
+}
+
+.about_cus {
+    position: absolute;
+    height: 250px;
+    width: 1160px;
+    overflow: hidden;
+    padding: 60px 0 50px 0;
+}
+
+.ab_cuss {
+    position: absolute;
+    width: 1160px;
+    height: 250px;
+}
+
+.ab_cus {
+    position: relative;
+    width: 280px;
+    height: 250px;
+    float: left;
+    margin: 0 5px;
+}
+
+.ab_cus:hover .cus_intr {
+    border: 1px solid #1a60ff;
+}
+
+.cus_img {
+    position: relative;
+    margin: 0 0 0 100px;
+    width: 89px;
+    height: 89px;
+    overflow: hidden;
+    border-radius: 45px;
+    box-shadow: 0 0 10px #1a90ff;
+}
+
+.cus_img img {
+    width: 89px;
+    height: 89px;
+}
+
+.cus_intr {
+    width: 213px;
+    height: 133px;
+    text-align: center;
+    background: #eef6fd none repeat scroll 0 0;
+    border: 1px solid #dddddc;
+    border-radius: 3px;
+    margin: -45px 15px 0;
+    padding: 60px 20px 10px;
+    position: relative;
+    z-index: -1;
+}
+
+.intr_title h3 {
+    margin: 0 0 5px 0;
+}
+
+.intr_title p {
+    margin: 0 0 20px 0;
+}
+
+.cus_intr p {
+    line-height: 25px;
+}
+
+
+/*                                     about customer start                                        */
+
+.hosting_cloud {
+    position: relative;
+    padding: 60px 0;
+    height: 336px;
+}
+
+.clo_con {
+    position: relative;
+    float: left;
+    width: 344px;
+    height: 360px;
+    margin: 0 10px 0;
+}
+
+.clo_con:hover .clo_img {
+    transform: scale(1.1, 1.1);
+}
+
+.clo_img {
+    position: relative;
+    margin: 85px 0 44px 0;
+}
+
+.col_con_fon {
+    padding: 0 10px 0;
+}
+
+.col_con_fon h3 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+
+.col_con_fon p {
+    color: gray;
+    margin: 0 0 10px 0;
+    line-height: 30px;
+}
+
+
+/*                                     about customer end                                        */
+
+
+/*                                     domain start                                        */
+
+.domain_main {
+    padding: 70px 0 92px 0;
+    height: 857px;
+}
+
+
+/*                                     domain end                                        */
 
 
 /*                                    footer   start                                            */
@@ -1495,7 +1805,7 @@ a:active {
     width: 330px;
     height: 168px;
     border: 0.5px solid transparent;
-    border-right-color: white;
+    border-right-color: gray;
 }
 
 .footer_top_left_con p {
@@ -1525,7 +1835,7 @@ a:active {
     width: 232.5px;
     height: 168px;
     border: 0.5px solid transparent;
-    border-right-color: white;
+    border-right-color: gray;
 }
 
 .footer_top_sec_con h3 {
@@ -1562,7 +1872,7 @@ a:active {
     width: 232.5px;
     height: 168px;
     border: 0.5px solid transparent;
-    border-right-color: white;
+    border-right-color: gray;
 }
 
 .footer_top_thr_con h3 {

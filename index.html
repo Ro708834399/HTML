@@ -80,13 +80,13 @@
     <!--            header start            -->
     <!--            contain_introduce start             -->
     <div class="contain_introduce">
-        <div class="left_arrow arrow">
+        <div class="left_arrow arrow" onclick="turn()">
             <p style="position: absolute;color: white">←</p>
         </div>
-        <div class="right_arrow arrow">
+        <div class="right_arrow arrow" onclick="turn()">
             <p style="position: absolute;color: white">→</p>
         </div>
-        <div class="introduce_main">
+        <div id="first_introduce" class="introduce_main" style="display: none;">
             <div class="con_left">
                 <div class="con1_left1">
                     <img src="images/slider_blue_bg.png">
@@ -97,6 +97,44 @@
                 </div>
                 <div class="con1_left2 ">
                     <img src="images/slider_img1.png " style="position: absolute;z-index: -3;width: 380px;height: 349px;">
+                </div>
+            </div>
+            <div class="con_right">
+                <div class="con1_right1 ">
+                    <img src="images/slider_blue_bg.png ">
+                    <p class="con_p" style="position:relative;margin-left: 40px;">from
+                        <span>$2.25%</span>
+                    </p>
+                    <p style="position:relative;margin: -10px 0 0 40px; ">per month</p>
+                </div>
+                <div class="con1_right2">
+                    <h1>WELCOME TO WEBHOST</h1>
+                    <h2>WE GIVE BEST WEB HOSTING SERVICE FOR YOUR WEBSITE</h2>
+                    <p>Duis autem veleum iriure dolor in hendrerit in vulput atevelit ess iriure dolor in hendrerit in vulput atevelit ess veleum iriure.</p>
+                    <div class="con1_right2_bottom">
+                        <div class="frame con1_right2_bottom_sty">
+                            <a>STARTED NOW →</a>
+                            <div class="con1_right2_bottom_sty_full"></div>
+                        </div>
+                        <div class="frame con1_right2_bottom_sty" style="background-color: white; border: 1px solid #1a50ff">
+                            <a style="color: black;">READ MORE →</a>
+                            <div class="con1_right2_bottom_sty_full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="second_introduce" class="introduce_main">
+            <div class="con_left">
+                <div class="con1_left1">
+                    <img src="images/slider_blue_bg.png">
+                    <p class="con_p">up to
+                        <span>50%</span>
+                    </p>
+                    <p style="position:absolute;margin: 80px 0 0 90px; ">off</p>
+                </div>
+                <div class="con1_left2 ">
+                    <img src="images/slider-image3.png " style="position: absolute;z-index: -3;width: 380px;height: 349px;">
                 </div>
             </div>
             <div class="con_right">
@@ -146,7 +184,7 @@
             <div class="search_right">
                 <div class="search_right_con">
                     <div class="right_con_text">
-                        <input type="text">
+                        <input type="text" placeholder="Enter domain name here">
                     </div>
                     <div class="right_con_btn"><span>SEARCH DOMAIN</span></div>
                     <div class="right_con_choice">
@@ -223,7 +261,7 @@
             </div>
             <div class="plan_bottom">
                 <div class="plan_bottom_con">
-                    <div class="bottom_con_img">
+                    <div class="bottom_con_img bg_image">
                         <img src="images/plan_icon1.png">
                     </div>
                     <h3>Web Hosting</h3>
@@ -236,7 +274,7 @@
             </div>
             <div class="plan_bottom">
                 <div class="plan_bottom_con">
-                    <div class="bottom_con_img">
+                    <div class="bottom_con_img bg_image">
                         <img src="images/plan_icon2.png">
                     </div>
                     <h3>Reseller Hosting</h3>
@@ -249,7 +287,7 @@
             </div>
             <div class="plan_bottom">
                 <div class="plan_bottom_con">
-                    <div class="bottom_con_img">
+                    <div class="bottom_con_img bg_image">
                         <img src="images/plan_icon3.png">
                     </div>
                     <h3>Cloud Hosting</h3>
@@ -265,52 +303,63 @@
     <!--            contain_plan end          -->
     <!--            contain_customer start          -->
     <div class="contain_customer">
-        <div class="container">
-            <div class="cus_left arrow" id="btnLeft">
-                <p style="position: absolute;color: white">←</p>
-            </div>
-            <div class="cus_right arrow" id="btnRight">
-                <p style="position: absolute;color: white">→</p>
-            </div>
-            <div class="cus_top">
-                <h2>Our Happy Customer</h2>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
-            </div>
-            <div class="cus_main">
-                <div id="cus_coms">
-                    <div class="cus_com">
-                        <div class="com_img"><img src="images/team_img1.jpg"></div>
-                        <div class="com_intr">
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate esse mole at vero eros et accumsan et iusto dignm.</p>
-                            <div class="intr_font">
-                                <h3>Romana Nasrin</h3>
-                                <p>Webhost Lead</p>
+        <div class="cus_con">
+            <div class="container">
+                <div class="cus_left arrow" id="btnLeft">
+                    <p style="position: absolute;color: white">←</p>
+                </div>
+                <div class="cus_right arrow" id="btnRight">
+                    <p style="position: absolute;color: white">→</p>
+                </div>
+                <div class="cus_top">
+                    <h2>Our Happy Customer</h2>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+                </div>
+                <div class="cus_main">
+                    <div id="cus_coms" class="cus_coms">
+                        <div class="cus_com">
+                            <div class="com_img"><img src="images/team_img1.jpg"></div>
+                            <div class="com_intr">
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate esse mole at vero eros et accumsan et iusto dignm.</p>
+                                <div class="intr_font">
+                                    <h3>Romana Nasrin</h3>
+                                    <p>Webhost Lead</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cus_com">
-                        <div class="com_img"><img src="images/team_img2.jpg"></div>
-                        <div class="com_intr">
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate esse mole at vero eros et accumsan et iusto dignm.</p>
-                            <div class="intr_font">
-                                <h3>Nazib Rafe Duke</h3>
-                                <p>Webhost Lead</p>
+                        <div class="cus_com">
+                            <div class="com_img"><img src="images/team_img2.jpg"></div>
+                            <div class="com_intr">
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate esse mole at vero eros et accumsan et iusto dignm.</p>
+                                <div class="intr_font">
+                                    <h3>Nazib Rafe Duke</h3>
+                                    <p>Webhost Lead</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cus_com">
-                        <div class="com_img"><img src="images/team_img3.jpg"></div>
-                        <div class="com_intr">
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate esse mole at vero eros et accumsan et iusto dignm.</p>
-                            <div class="intr_font">
-                                <h3>Elizeb Lili</h3>
-                                <p>Webhost Lead</p>
+                        <div class="cus_com">
+                            <div class="com_img"><img src="images/team_img3.jpg"></div>
+                            <div class="com_intr">
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate esse mole at vero eros et accumsan et iusto dignm.</p>
+                                <div class="intr_font">
+                                    <h3>Elizeb Lili</h3>
+                                    <p>Webhost Lead</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cus_end"></div>
+        </div>
+        <div class="cus_end">
+            <div class="container">
+                <div class="cus_end_title">
+                    <h2>We give always awesome service.</h2>
+                </div>
+                <div class="cus_end_btn">
+                    <p id="cus_end">STARTED NOW</p>
+                </div>
+            </div>
         </div>
     </div>
     <!--            contain_customer end          -->

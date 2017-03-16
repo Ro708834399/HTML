@@ -4,7 +4,7 @@ function select_down() {
     if (x.style.opacity == "0") {
         x.style.animation = "select_come 0.2s"
         x.style.opacity = "1";
-        x.style.top = "48";
+        x.style.top = 36 + "px";
     } else {
         x.style.animation = "select_back 0.2s"
         x.style.opacity = "0";
@@ -64,6 +64,21 @@ function login_down() {
         setTimeout(function() { x.style.display = "none"; }, 400);
     }
 }
+
+function turn() {
+    var div1 = document.getElementById("first_introduce");
+    var div2 = document.getElementById("second_introduce");
+    if (div1.style.display === "none") {
+        div1.style.display = "";
+        div2.style.display = "none";
+    } else {
+        div1.style.display = "none";
+        div2.style.display = "";
+    }
+}
+
+
+/*   切换头像  */
 window.onload = function() {
     var cuscoms = document.getElementById('cus_coms');
     var btnLeft = document.getElementById('btnLeft');
@@ -91,9 +106,13 @@ window.onload = function() {
 
     btnRight.onclick = function() {
         if (x == 0) {
+            cuscoms.style.transitionDuration = '';
             x = -1728;
+            cuscoms.style.left = -1728 + 'px';
+        } else {
+            cuscoms.style.transition = 'left 1s';
+            x += 576;
+            cuscoms.style.left = x + 'px';
         }
-        x += 576;
-        cuscoms.style.left = x + 'px';
     }
 }
