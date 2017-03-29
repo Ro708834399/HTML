@@ -306,7 +306,7 @@ a:active {
 
 .leader_contain li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
     float: left;
 }
 
@@ -1750,15 +1750,248 @@ a:active {
 /*                                     about customer end                                        */
 
 
-/*                                     domain start                                        */
+/*                                     Domain webhost start                                        */
 
 .domain_main {
     padding: 70px 0 92px 0;
     height: 857px;
 }
 
+.domain_top {
+    text-align: center;
+}
 
-/*                                     domain end                                        */
+.domain_top>h2 {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.dom_top_cb {
+    margin: 15px 20px 0;
+    display: inline-block;
+}
+
+.dom_top_bottom {
+    margin: 50px 0 0;
+    border-width: 0px;
+    overflow: hidden;
+}
+
+.dom_btm_text {
+    border-width: 0px;
+    position: relative;
+}
+
+.dom_btm_text input {
+    border-width: 0px;
+    padding: 0 40px 0 40px;
+    border-radius: 35px;
+    height: 54px;
+    width: 680px;
+    border: 1px solid #dddddc;
+    background: #eef6fd;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.dom_btm_btn {
+    position: relative;
+    margin: -54px 0 0 780px;
+    border-radius: 30px;
+    height: 35px;
+    width: 170px;
+    cursor: pointer;
+    padding: 13px 0 0;
+    background-color: #1a80ff;
+    border: 2px solid white;
+}
+
+.dom_btm_btn:hover {
+    background-color: #888888;
+    box-shadow: 0 0 5px #888888;
+}
+
+.dom_btm_btn:hover #span {
+    color: black;
+}
+
+.dom_btm_btn>span {
+    position: relative;
+    font-size: 15px;
+    color: white;
+}
+
+.dom_top_cb_div {
+    position: relative;
+    margin: 0 0 0 -350px;
+    padding: 0 0 90px 0;
+}
+
+.domain_bottom {
+    height: 585px;
+    width: 1140px;
+    padding: 0 15px;
+}
+
+.sample_con {
+    position: relative;
+    width: 1140px;
+    height: 113px;
+    background: #d7eafa;
+    border-bottom: 1px solid #288feb;
+}
+
+.sample_con_cp {
+    position: relative;
+    width: 1140px;
+    height: 83px;
+    border-bottom: 1px solid #66caff;
+    padding: 10px 0 0 0;
+}
+
+.sam_con_left {
+    position: relative;
+    width: 550px;
+    float: left;
+    padding: 30px 0 10px 37px;
+    margin: 0;
+}
+
+.sam_con_left>p {
+    font-size: 20px;
+    font-weight: 500px;
+    color: #286feb;
+}
+
+.sam_con_left>span {
+    margin: 0;
+    font-family: border;
+    font-size: 15px;
+    font-weight: 600px;
+    color: #44aaff;
+}
+
+.sam_con_one {
+    position: relative;
+    float: right;
+    margin: 20px 217px 0 0;
+}
+
+.sam_con_right {
+    position: relative;
+    float: right;
+    margin: 30px 217px 0 0;
+}
+
+.sam_con_right>span {
+    color: #44aaff;
+    margin: 0 20px 0 0;
+}
+
+#span1 {
+    color: black;
+    display: inline-block;
+    width: 74.72px;
+    height: 17px;
+    text-decoration: line-through;
+}
+
+.sam_con_right_frame {
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    background-color: #1a80ff;
+    margin: -35px 0 0 210px;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.sam_con_right_frame>a {
+    position: absolute;
+    margin: 15px 0 0 23px;
+    z-index: 2;
+    color: white;
+}
+
+.sam_con_right_frame_full {
+    position: relative;
+    width: 0;
+    height: 50px;
+    background-color: #1a50ff;
+    border-radius: 25px;
+    transition: width, 0.5s
+}
+
+.sam_con_right_frame:hover .sam_con_right_frame_full {
+    width: 170px;
+    animation: full170 0.5s;
+}
+
+@-webkit-keyframes full170 {
+    0% {
+        width: 0;
+    }
+    65% {
+        width: 170px;
+    }
+    80% {
+        width: 152px;
+    }
+    100% {
+        width: 170px;
+    }
+}
+
+@-o-keyframes full170 {
+    0% {
+        width: 0;
+    }
+    65% {
+        width: 170px;
+    }
+    80% {
+        width: 152px;
+    }
+    100% {
+        width: 170px;
+    }
+}
+
+@-moz-keyframes full170 {
+    0% {
+        width: 0;
+    }
+    65% {
+        width: 170px;
+    }
+    80% {
+        width: 152px;
+    }
+    100% {
+        width: 170px;
+    }
+}
+
+@keyframes full170 {
+    0% {
+        width: 0;
+    }
+    65% {
+        width: 170px;
+    }
+    80% {
+        width: 152px;
+    }
+    100% {
+        width: 170px;
+    }
+}
+
+
+/*                                     Domain webhost end                                        */
 
 
 /*                                    footer   start                                            */
